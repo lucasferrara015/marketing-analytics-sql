@@ -11,13 +11,21 @@ El análisis busca:
 
 ---
 
-## 🗄️ Modelo de Datos
-El modelo relacional está compuesto por 4 tablas optimizadas con índices:
-1. `clientes`: Información demográfica y segmentación.
-2. `campanas`: Presupuesto, canales y especificaciones técnicas.
-3. `interacciones_campana`: Impresiones, clics, CPC y flags de conversión.
-4. `conversiones`: Transacciones e ingresos monetarios confirmados.
+## 🗄️ Modelo de Datos y Estructura del Repositorio
+El proyecto está organizado en carpetas modulares para mantener una clara separación entre los scripts de base de datos y las consultas analíticas:
 
+```text
+marketing-analytics-sql/
+│
+├── database/                                          <-- Archivos DDL y DML de la base de datos
+│   ├── marketing_analytics_db_campanas.sql            <-- Tabla campanas
+│   ├── marketing_analytics_db_clientes.sql            <-- Tabla clientes
+│   ├── marketing_analytics_db_conversiones.sql        <-- Tabla conversiones
+│   └── marketing_analytics_db_interacciones_campana.sql <-- Tabla interacciones
+│
+├── queries_analytics.sql                              <-- Consultas analíticas de negocio
+└── README.md                                          <-- Documentación principal
+```
 ## 📈 Consultas Analíticas (`queries_analytics.sql`)
 
 El archivo `queries_analytics.sql` contiene los 5 casos de negocio clave diseñados para aprovechar la indexación del motor relacional:
@@ -57,15 +65,12 @@ Crear la base de datos en MySQL Workbench o tu gestor favorito:
 CREATE DATABASE marketing_analytics_db;
 USE marketing_analytics_db;
 ```
-2. Importar o ejecutar los scripts de las tablas y datos correspondientes:
+Ejecutar los scripts de la carpeta database/:
+database/marketing_analytics_db_campanas.sql
+database/marketing_analytics_db_clientes.sql
+database/marketing_analytics_db_conversiones.sql
+database/marketing_analytics_db_interacciones_campana.sql
+Ejecutar el análisis:
+Abrir y ejecutar el archivo queries_analytics.sql en tu gestor (MySQL Workbench / DBeaver) para extraer los reportes analíticos de negocio.
 
-marketing_analytics_db_campanas.sql
-
-marketing_analytics_db_clientes.sql
-
-marketing_analytics_db_conversiones.sql
-
-marketing_analytics_db_interacciones_campana.sql
-
-Ejecutar las consultas analíticas sobre el modelo para extraer los insights de negocio.
 
