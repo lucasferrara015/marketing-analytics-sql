@@ -48,7 +48,7 @@ El archivo `queries_analytics.sql` contiene los 5 casos de negocio clave diseña
 
 ### 5. Retorno sobre la Inversión (ROI) Neto por Campaña
 * **Objetivo de negocio:** Auditar la rentabilidad financiera neta descontando el presupuesto asignado de los ingresos reales acumulados.
-$$\text{ROI Neto} = \sum (\text{monto\_ingreso}) - \text{presupuesto}$$
+
 * **Lógica y Optimización:** Calcula la diferencia absoluta monetaria y el porcentaje de rentabilidad sobre la inversión utilizando `LEFT JOIN` para incluir campañas sin conversiones y `COALESCE` para manejar valores nulos.
 
 ---
