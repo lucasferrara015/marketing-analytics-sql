@@ -24,11 +24,21 @@ El modelo relacional está compuesto por 4 tablas optimizadas con índices:
 1. Clonar el repositorio:
    ```bash
    git clone [https://github.com/TU-USUARIO/marketing-analytics-sql.git](https://github.com/TU-USUARIO/marketing-analytics-sql.git)
-Ejecutar schema.sql en MySQL para crear las tablas e índices.
+Crear la base de datos en MySQL Workbench o tu gestor favorito:
 
-Ejecutar data.sql para cargar los datos sintéticos de prueba.
+```SQL
+CREATE DATABASE marketing_analytics_db;
+USE marketing_analytics_db;
+```
+2. Importar o ejecutar los scripts de las tablas y datos correspondientes:
 
-Correr las consultas de queries_analytics.sql para obtener los insights analíticos.
+marketing_analytics_db_campanas.sql
 
----
+marketing_analytics_db_clientes.sql
+
+marketing_analytics_db_conversiones.sql
+
+marketing_analytics_db_interacciones_campana.sql
+
+Ejecutar las consultas analíticas sobre el modelo para extraer los insights de negocio.
 
