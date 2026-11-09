@@ -65,12 +65,17 @@ Crear la base de datos en MySQL Workbench o tu gestor favorito:
 CREATE DATABASE marketing_analytics_db;
 USE marketing_analytics_db;
 ```
-Ejecutar los scripts de la carpeta database/:
-database/marketing_analytics_db_campanas.sql
-database/marketing_analytics_db_clientes.sql
-database/marketing_analytics_db_conversiones.sql
-database/marketing_analytics_db_interacciones_campana.sql
-Ejecutar el análisis:
-Abrir y ejecutar el archivo queries_analytics.sql en tu gestor (MySQL Workbench / DBeaver) para extraer los reportes analíticos de negocio.
+# Ejecutar los scripts de la carpeta database/ :
+*database/marketing_analytics_db_campanas.sql
+
+*database/marketing_analytics_db_clientes.sql
+
+*database/marketing_analytics_db_conversiones.sql
+
+*database/marketing_analytics_db_interacciones_campana.sql
+
+# Ejecutar el análisis :
+
+* Abrir y ejecutar el archivo queries_analytics.sql en tu gestor (MySQL Workbench / DBeaver) para extraer los reportes analíticos de negocio.
 
 
